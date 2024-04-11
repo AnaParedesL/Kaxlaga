@@ -1,0 +1,1039 @@
+:root{
+    --peach:#bf9464;
+
+}
+
+.lato-regular {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .lato-black {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif ;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+/*header*/
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #fff;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    text-transform: capitalize;
+}
+
+header .logo{
+    height: auto;
+    width: 170px;
+    justify-content: center;
+}
+
+
+header .navbar a{
+    font-family: 'Lato';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #666;
+}
+
+header .navbar a:hover{
+    color: var(--peach);
+}
+
+
+header #toggler{
+    display: none;
+}
+
+header .fa-bars{
+    font-size: 3rem;
+    color: #333;
+    border-radius:.5rem;
+    padding: 5rem 1.5rem;
+    cursor: pointer;
+    border: 1rem solid rgba(0,0,0,.1);
+    display:none ;
+}
+
+
+
+/*HOME*/
+
+section{
+    padding: 2rem 9%;
+ }
+
+.home{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(kaxlaga-img/Entrada\ de\ los\ Cuartos_\ Entrance\ to\ Rooms.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content{
+    margin-top: 50px;
+    max-width:50rem;
+    margin-left: 9rem;
+}
+
+.home .content h3{
+    font-size: 6rem;
+    color: #142624;
+    text-transform: none;
+}
+
+.home .content span{
+    font-size: 3.5rem;
+    color:#893b2b;
+    padding: 1rem 0;
+    line-height: 1.5;
+    text-transform: none;
+}
+
+.home .content p{
+    font-size: 2rem;
+    color: #142624;
+    padding: 1rem 0;
+    line-height: 1.5;
+    text-transform: none;
+}
+
+.home .content .btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 10px;
+    background: #333;
+    color: #fff;
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.home .content .btn:hover{
+background: var(--peach);
+}
+
+/*DESCRIPCION*/
+
+.about{
+    background-color: #fff;
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+    font-family: 'Lato';
+    font-weight: 400;
+    position: relative;
+    justify-content: center;
+}
+
+.about .row .content{
+    flex: 1 ;
+}
+
+.about .row .content h3{
+    font-size: 4rem;
+    color: #142624;
+    margin-top: 6rem;
+    text-align: center;
+}
+
+.about .row .content h3 span{
+    color: #63735f;
+}
+.about .row .content p{
+    text-align: center;
+    font-size: 2rem;
+    text-transform: none;
+    color: #706f6f;
+    padding: 5rem 0;
+    padding-top: 1rem;
+    line-height: 1.5;
+}
+
+
+/*DIVISION*/
+
+.division {
+    display: flex;
+    padding: 2rem 9%;
+    height: 350px;
+    align-items: center;
+    background: url(kaxlaga-img/division\ kaxlaga.png);
+    background-size:  cover;
+    background-position:center;
+    justify-content: center;
+}
+
+
+
+/*ICONOS*/
+
+.icons-container{
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    padding: 2rem 8%;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+
+.icons-container .icons{
+    background: #fff;
+    display: flex;
+    align-items: center;
+    flex: 1 25rem;
+}
+
+.icons-container .icons h3{
+   font-size: 20px;
+   color: var(--peach);
+   
+   text-transform: uppercase;
+   margin-bottom: 12px;
+}
+
+.icons-container .icons p{
+    color: #333;
+    padding-bottom: .5rem;
+    font-size: 1.8rem;
+    text-transform: none;
+}
+
+/*contact*/
+
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color: #142624;
+    padding: 1rem;
+    margin: 2rem 0;
+    background: rgba(255, 202, 141, 0.308);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.contact .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    
+}
+
+.contact .row .info-contacto{
+    flex: 1 1 40rem ;
+    padding: 2rem 2.5rem;
+    box-shadow: 0px 0px 40px 5px rgb(143, 102, 56);
+    background: #fff;
+    background-repeat:round ;
+    border-radius: .5rem;
+    height: 300px;
+}
+
+.contact .row .image{
+    flex: 1 1 40rem ;}
+
+
+.contact .row .image {
+    height: 300px;
+    box-shadow: 0px 0px 30px 5px rgb(143, 102, 56);
+    border-radius: .5rem;
+}
+
+.info-contacto {
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: rgb(60, 60, 61);
+}
+.info-contacto h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: rgb(60, 60, 61);
+}
+.info-contacto p {
+    margin-bottom: 20px;
+    color: rgb(60, 60, 61);
+    font-size: 24px;
+    text-transform: none;
+}
+.info-contacto i {
+    color: grey;
+    margin-right: 10px;
+}
+
+
+/*REDES*/
+
+.redes{
+    width: 100%;
+    height: 250px;
+    padding: 2rem 8%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.redes h3{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    text-transform: none;
+    color: #142624;
+}
+
+.redes h3 span{
+    color: var(--peach);
+}
+
+.contenedor-redes{
+    width: 100%;
+}
+
+.iconos-sociales{
+    display: flex;
+    justify-content: center;
+}
+
+.iconos-sociales a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #bf9464;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.iconos-sociales a i{
+    font-size: 40px;
+    color: white;
+    opacity: 0.9;
+}
+
+/*hover para iconos*/
+.iconos-sociales a:hover {
+    background-color: #893b2b;
+    transition: 0.5s;
+  }
+  .iconos-sociales a:hover i {
+    color: whitesmoke;
+    transition: 0.5;
+  }
+
+
+  /*PRODUCTOS*/
+
+
+.products{
+    display: flex;
+    align-items: center;
+    height: 450px;
+    background: url(kaxlaga-img/general\ 6.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+}
+
+.products .content h3{
+    font-size: 6rem;
+    color: #fff;
+    text-align: center;
+}
+
+/*TEXTO PRODUCTOS*/
+
+.texto-productos{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 9%;
+    padding-bottom: 3rem;
+    font-family: 'Lato';
+    font-weight: 400;   
+}
+
+.texto-productos .texto-p p{
+    text-align: center;
+    font-size: 2rem;
+    text-transform: none;
+    color: #142624;
+    padding: 2rem 0;
+    line-height: 1.5;
+}
+
+.botones-productos{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 10rem;
+}
+
+.contenedor-botones a:hover {
+    background-color: #893b2b;
+    transition: 0.5s;
+  }
+  
+
+.contenedor-botones a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #333;
+    margin: 20px;
+    border-radius: 10px;
+    font-size: 3rem;
+    opacity: 0.9;
+    color: #fff;
+    cursor: pointer;
+    padding: .9rem 3.5rem;
+    margin-bottom: 2rem;
+}
+
+/*SOBRE MI*/
+
+.aboutt{
+    display: flex;
+    align-items: center;
+    height: 450px;
+    background: url(kaxlaga-img/textiles2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+}
+
+.aboutt .content-b h3{
+    font-size: 6rem;
+    color: #fff;
+    text-align: center;
+}
+
+
+/*TEXTO ABOUT*/
+.texto-about{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 9%;
+    padding-bottom: 3rem;
+    font-family: 'Lato';
+    font-weight: 400;   
+}
+
+.texto-about .texto-a p{
+    text-align: center;
+    font-size: 2rem;
+    text-transform: none;
+    color: #142624;
+    padding: 2rem 0;
+    line-height: 1.5;
+}
+
+.about-services{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+    font-family: 'Lato';
+    font-weight: 400;
+    justify-content: center;
+}
+
+.about-services .about-s h3{
+    font-size: 4rem;
+    color: #142624;
+    margin-top: 6rem;
+    text-align: center;
+    text-transform: none;
+}
+
+.icons-services{
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    padding: 2rem 8%;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+
+.icons-services .icons-s{
+    background: #fff;
+    display: flex;
+    align-items: center;
+    flex: 1 70rem;
+}
+
+.icons-services .icons-s h3{
+    font-size: 20px;
+    color: var(--peach);
+    
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    text-align: center;
+}
+  
+
+/*galeria imagenes*/
+
+.last{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+    font-family: 'Lato';
+    font-weight: 400;
+    position: relative;
+    justify-content: center
+}
+
+.last .last-w h3{
+    font-size: 4rem;
+    color: #142624;
+    margin-top: 6rem;
+    text-align: center;
+}
+
+.gallery{
+min-height: 100%;
+margin-top: 2rem;
+}
+
+.categories ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.categories ul li{
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 10px;
+    background-color: #63735f;
+    padding: 2rem;
+    color: #fff;
+}
+
+
+.gallery__images{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+gap: 1rem;
+}
+
+.gallery__card{
+    width: 350px;
+    height: 350px;
+    display: block;
+    position: relative;
+}
+
+.gallery__card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.gallery__card:hover{
+    transition: ease-in;
+}
+
+.categories .filter-item.active{
+    border-bottom: 1px solid #333;
+}
+
+.gallery__card.hide{
+    display: none;
+}
+.gallery__card.show{
+    animation: fadeIn .5s ease;
+}
+
+@keyframes fadeIn{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+/*TEXTILES*/
+.textiles{
+    display: flex;
+    align-items: center;
+    height: 450px;
+    background: url(kaxlaga-img/chiapas\ 4.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+}
+
+.textiles .content-t h3{
+    font-size: 6rem;
+    color: #fff;
+    text-align: center;
+}
+
+.texto-textiles{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 9%;
+    padding-bottom: 3rem;
+    font-family: 'Lato';
+    font-weight: 400; 
+    text-transform: none;  
+}
+
+.texto-textiles .texto-t h3{
+    font-size: 4rem;
+    color: #142624;
+    margin-top: 3rem;
+    text-align: center;
+    text-transform: none;
+
+}
+
+.texto-textiles .texto-t h3 span{
+    color: #63735f;
+    
+    
+}
+
+    
+
+.texto-textiles .texto-t p{
+    text-align: center;
+    font-size: 2rem;
+    text-transform: none;
+    color: #142624;
+    padding: 2rem 0;
+    line-height: 1.5;
+}
+
+/*oaxaca*/
+
+.gallery-t{
+    position: relative;
+    min-height: 100vh;
+    background-color: #fff;
+}
+
+.gallery-t .gallery-te1 { 
+   display: flex;
+   flex-wrap: wrap;
+   gap: 15px;
+   justify-content: center;
+   padding: 10px;
+}
+
+.gallery-t .gallery-te1 .image-t{
+    height: 350px;
+    width: 350px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.gallery-t .gallery-te1 .image-t img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 02s linear;
+}
+
+.gallery-t .gallery-te1 .image-t:hover img{
+    transform: scale(1.1);
+}
+
+
+.gallery-t .popup-image{
+    padding: 2rem 9%;
+    position: fixed;
+    top: 80px; left: 0; 
+    background: rgba(0,0,0,.9);
+    height: 90%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+    align-items: center;
+    
+}
+
+.gallery-t .popup-image span{
+    position: absolute;
+    top: 50px;right: 0; 
+    font-size: 60px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.gallery-t .popup-image img{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #fff;
+    border-radius: 5px;
+    width: 750px;
+    object-fit: cover;
+}
+
+/*chiapas*/
+.gallery-t .gallery-te2 { 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+ }
+ 
+ .gallery-t .gallery-te2 .image-t{
+     height: 350px;
+     width: 350px;
+     overflow: hidden;
+     cursor: pointer;
+ }
+ 
+ .gallery-t .gallery-te2 .image-t img{
+     height: 100%;
+     width: 100%;
+     object-fit: cover;
+     transition: 02s linear;
+ }
+ 
+ .gallery-t .gallery-te2 .image-t:hover img{
+     transform: scale(1.1);
+ }
+
+
+ /*zapotecos*/
+
+ .gallery-t .gallery-te3 { 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+ }
+ 
+ .gallery-t .gallery-te3 .image-t{
+     height: 350px;
+     width: 350px;
+     overflow: hidden;
+     cursor: pointer;
+ }
+ 
+ .gallery-t .gallery-te3 .image-t img{
+     height: 100%;
+     width: 100%;
+     object-fit: cover;
+     transition: 02s linear;
+ }
+ 
+ .gallery-t .gallery-te3 .image-t:hover img{
+     transform: scale(1.1);
+ }
+
+ /*yute*/
+
+ .gallery-t .gallery-te4 { 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+ }
+ 
+ .gallery-t .gallery-te4 .image-t{
+     height: 350px;
+     width: 350px;
+     overflow: hidden;
+     cursor: pointer;
+ }
+ 
+ .gallery-t .gallery-te4 .image-t img{
+     height: 100%;
+     width: 100%;
+     object-fit: cover;
+     transition: 02s linear;
+ }
+ 
+ .gallery-t .gallery-te4 .image-t:hover img{
+     transform: scale(1.1);
+ }
+
+
+ /*Mobiliario*/
+
+ .mobiliario{
+    display: flex;
+    align-items: center;
+    height: 450px;
+    background: url(kaxlaga-img/general\ 1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+}
+
+.mobiliario .content-m h3{
+    font-size: 6rem;
+    color: #fff;
+    text-align: center;
+}
+
+.texto-mobiliario{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 9%;
+    padding-bottom: 3rem;
+    font-family: 'Lato';
+    font-weight: 400; 
+    text-transform: none;  
+}
+
+.texto-mobiliario .texto-m h3{
+    font-size: 4rem;
+    color: #142624;
+    margin-top: 3rem;
+    text-align: center;
+    text-transform: none;
+
+}
+
+.texto-mobiliario .texto-m h3 span{
+    color: #63735f;
+    
+    
+}
+
+    
+
+.texto-mobiliario .texto-m p{
+    text-align: center;
+    font-size: 2rem;
+    text-transform: none;
+    color: #142624;
+    padding: 2rem 0;
+    line-height: 1.5;
+}
+
+/*FOOTER*/
+
+.footer{ margin-top: 50px;
+background-color: #fff;}
+.footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.footer .box-container .box{
+    flex: 1 1 25rem;
+}
+
+.footer .box-container .box h3{
+    color: #142624;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a{
+    display: block;
+    color: #666;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a:hover{
+    color: var(--peach);
+    text-decoration: underline;
+}
+
+.footer .credit{
+    text-align: center;
+    padding:1.5rem ;
+    margin-top: 1.5rem;
+    padding-top:2.5rem;
+    font-size: 2rem;
+    color: #333;
+    border-top: 1rem solid rgba(0,0,0,.1);
+
+}
+
+.footer .credit span{
+    color: var(--peach);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*media queries*/
+@media(max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    header{
+        padding: 2rem;
+    }
+
+    header .logo{
+        margin-right: 120px;
+    }
+
+    section{
+        padding: 2rem;
+    }
+
+}
+
+@media(max-width:768px){
+
+    header .fa-bars{
+        display: block;
+        border-color: #fff ;
+    
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: whitesmoke;
+        border-top: .1rem solid rgba(0,0,0,.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0 );
+    }
+
+    header #toggler:checked~.navbar{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: whitesmoke;
+        border: 1rem solid rgba(247, 243, 243, 0.1);
+        display: block;
+        color: #666;
+    }
+
+    
+    .home .content{
+        margin-top: 9rem;
+        margin-left:0 ;
+    }
+    .home .content h3{
+        font-size: 5rem;
+    
+    }
+
+    .home .content p{
+        font-size: 2.5rem;
+    }
+
+    .icons-container .icons{
+        padding-top: none;
+        padding-bottom: none;
+    }
+    .icons-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .icons-container .icons p{
+        font-size: 20px;
+    }
+    
+
+    .division .imagen img{
+    width: 300px;
+    }
+
+    .info-contacto {
+        text-align: left;
+        font-size: 15px;
+        margin-bottom: 15px;
+        color: rgb(60, 60, 61);
+    }
+
+    .contact .row .image iframe {
+        width: 460px;
+        box-shadow: 0px 0px 30px 5px rgb(143, 102, 56);
+        border-radius: .5rem;
+    }
+
+    .gallery-t .popup-image img{
+        width: 95%;
+    }
+    
+    }
+
+
+@media(max-width:375px){
+    html{
+        font-size: 50%;
+    }
+
+    .contenedor-botones a{
+        font-size: 2rem;
+    }
+
+    .contact .row .image iframe{ 
+        width: 345px;
+    }
+    
+    .footer .box-container .box a{
+        font-size: 17px;
+    }
+}
