@@ -114,7 +114,7 @@ section{
 
 .home .content span{
     font-size: 3.5rem;
-    color:#893b2b;
+    color:#ca8a19;
     padding: 1rem 0;
     line-height: 1.5;
     text-transform: none;
@@ -245,7 +245,7 @@ background: var(--peach);
     color: #142624;
     padding: 1rem;
     margin: 2rem 0;
-    background: rgba(255, 202, 141, 0.308);
+    background: rgba(206, 139, 63, 0.308);
     margin-top: 50px;
     margin-bottom: 50px;
 }
@@ -336,7 +336,7 @@ background: var(--peach);
 .iconos-sociales a{
     text-decoration: none;
     padding: 10px;
-    background-color: #bf9464;
+    background-color: var(--peach);
     margin: 20px;
     border-radius: 10px;
 }
@@ -349,7 +349,7 @@ background: var(--peach);
 
 /*hover para iconos*/
 .iconos-sociales a:hover {
-    background-color: #893b2b;
+    background-color: #63735f;
     transition: 0.5s;
   }
   .iconos-sociales a:hover i {
@@ -406,7 +406,7 @@ background: var(--peach);
 }
 
 .contenedor-botones a:hover {
-    background-color: #893b2b;
+    background-color: var(--peach);
     transition: 0.5s;
   }
   
@@ -414,7 +414,7 @@ background: var(--peach);
 .contenedor-botones a{
     text-decoration: none;
     padding: 10px;
-    background-color: #333;
+    background-color: #142624;
     margin: 20px;
     border-radius: 10px;
     font-size: 3rem;
@@ -423,6 +423,35 @@ background: var(--peach);
     cursor: pointer;
     padding: .9rem 3.5rem;
     margin-bottom: 2rem;
+    position: relative;
+}
+
+.tooltip-top {
+    background: #142624;
+    padding: 40px;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    bottom: 130%;
+    /* Inicialmente oculto, pero sin display: none */
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+    display: flex; /* Usa flex para organizar las imágenes */
+    flex-direction: row; /* Organiza las imágenes en una fila horizontal */
+    gap: 10px;
+}
+
+.tooltip:hover .tooltip-top {
+    /* Cambia la visibilidad y opacidad cuando se interactúa */
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.tooltip .tooltip-top img{
+    width: 150px;
+    height: 150px;
 }
 
 /*SOBRE MI*/
@@ -431,7 +460,7 @@ background: var(--peach);
     display: flex;
     align-items: center;
     height: 450px;
-    background: url(kaxlaga-img/textiles2.jpg) no-repeat;
+    background: url(kaxlaga-img/portada\ about.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     justify-content: center;
@@ -483,34 +512,37 @@ background: var(--peach);
     text-transform: none;
 }
 
-.icons-services{
+.icons-services {
     background: #fff;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5rem;
-    padding-top: 6rem;
     padding-bottom: 6rem;
-    padding: 2rem 8%;
-    margin-top: 4rem;
+    margin-top: 2rem;
     margin-bottom: 3rem;
-}
-
-.icons-services .icons-s{
-    background: #fff;
     display: flex;
-    align-items: center;
-    flex: 1 70rem;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos horizontalmente */
+    padding: 2rem 20%;
 }
 
-.icons-services .icons-s h3{
+.icons-services .icons-s {
+    background: #fff;
+    padding: 2rem;
+    margin: 0; /* Elimina cualquier margen predeterminado */
+    width: 100%; /* Asegura que todos los elementos tengan el mismo ancho */
+    box-sizing: border-box; /* Incluye padding y border en el ancho total */
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+
+.icons-services .icons-s h3 {
     font-size: 20px;
     color: var(--peach);
-    
     text-transform: uppercase;
     margin-bottom: 12px;
-    text-align: center;
+    text-align: left; /* Mantén el texto centrado */
+    margin: 0; /* Elimina cualquier margen predeterminado */
 }
-  
+
+
 
 /*galeria imagenes*/
 
@@ -549,12 +581,21 @@ margin-top: 2rem;
 
 .categories ul li{
     cursor: pointer;
-    font-size: 15px;
+    font-size: 17px;
     border-radius: 10px;
     background-color: #63735f;
     padding: 2rem;
     color: #fff;
 }
+
+
+/*hover para categories*/
+
+  .categories ul li:hover  {
+    background-color: var(--peach);
+    color: whitesmoke;
+    transition: 0.5;
+  }
 
 
 .gallery__images{
@@ -692,7 +733,7 @@ gap: 1rem;
     padding: 2rem 9%;
     position: fixed;
     top: 80px; left: 0; 
-    background: rgba(0,0,0,.9);
+    background: rgba(20, 38, 36, 0.9);;
     height: 90%;
     width: 100%;
     z-index: 100;
@@ -703,7 +744,7 @@ gap: 1rem;
 
 .gallery-t .popup-image span{
     position: absolute;
-    top: 50px;right: 0; 
+    top: 10px;right: 30px; 
     font-size: 60px;
     font-weight: bolder;
     color: #fff;
@@ -715,9 +756,10 @@ gap: 1rem;
     position: absolute;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
-    border: 5px solid #fff;
+    border: 5px;
     border-radius: 5px;
-    width: 750px;
+    width: 450px;
+    height: 450px;
     object-fit: cover;
 }
 
@@ -824,7 +866,7 @@ gap: 1rem;
     text-align: center;
 }
 
-.texto-mobiliario{
+/*.texto-mobiliario{
     display: flex;
     align-items: center;
     gap: 2rem;
@@ -859,7 +901,41 @@ gap: 1rem;
     color: #142624;
     padding: 2rem 0;
     line-height: 1.5;
+}*/
+
+.texto-mobiliario {
+    display: flex;
+    flex-direction: column; /* Ordenar los elementos de arriba a abajo */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+    width: 100%; /* Asegúrate de que el contenedor ocupe todo el ancho de la página */
+    padding: 2rem 9%; /* Asegura un buen padding interno */
+    padding-bottom: 3rem;
+    font-family: 'Lato';
+    font-weight: 400;
+    margin: 0 auto; /* Centra el contenedor en la página */
 }
+
+.texto-mobiliario .texto-m h3 {
+    font-size: 4rem;
+    color: #142624;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.texto-mobiliario .texto-m h3 span {
+    color: #63735f;
+}
+
+.texto-mobiliario .texto-m p{
+    text-align: center;
+    font-size: 2rem;
+    text-transform: none;
+    color: #142624;
+    padding: 2rem 0;
+    line-height: 1.5;
+}
+
 
 /*FOOTER*/
 
@@ -1020,7 +1096,7 @@ background-color: #fff;}
     }
 
 
-@media(max-width:375px){
+@media(max-width:430px){
     html{
         font-size: 50%;
     }
