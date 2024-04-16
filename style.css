@@ -298,6 +298,18 @@ background: var(--peach);
     margin-right: 10px;
 }
 
+.image{
+    position: relative;
+    overflow: hidden;
+}
+
+.image iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 /*REDES*/
 
@@ -460,7 +472,7 @@ background: var(--peach);
     display: flex;
     align-items: center;
     height: 450px;
-    background: url(kaxlaga-img/portada\ about.jpg) no-repeat;
+    background: url(kaxlaga-img/cabaña\ 4.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     justify-content: center;
@@ -645,7 +657,7 @@ gap: 1rem;
     display: flex;
     align-items: center;
     height: 450px;
-    background: url(kaxlaga-img/chiapas\ 4.jpg) no-repeat;
+    background: url(kaxlaga-img/chiapas\ 9.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     justify-content: center;
@@ -951,7 +963,50 @@ background-color: #fff;
 }
 
 
+/*boton idiomas*/
 
+.en{
+    color: #333;
+}
+
+.es{
+    color: #bf9464;
+}
+
+.check{
+    position: relative;
+    width: 50px;
+}
+
+.check:before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background: #333;
+    border-radius: 25px;
+}
+
+.check:after{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border-radius: 25px;
+    transition: 0.25s;
+    border: 2px solid #333;
+    box-sizing: border-box;
+}
+
+.check:checked:after{
+    left: 25px;
+    border: 2px solid #bf9464;
+}
+
+.check:checked:before{
+    background: #bf9464;
+}
 
 
 
@@ -969,7 +1024,7 @@ background-color: #fff;
     }
 
     header{
-        padding: 2rem;
+        padding: 2rem ;
         
     }
 
@@ -981,6 +1036,13 @@ background-color: #fff;
 
 @media(max-width:768px){
 
+    html{
+        font-size: 65%;
+    }
+
+    section{
+        padding: 2rem 9%;
+    }
     header .logo {
         height: auto;
         width: 250px;}
@@ -1018,7 +1080,9 @@ background-color: #fff;
         color: #666;
     }
 
-    
+    .home{
+        padding: 2rem;
+    }
     .home .content{
         margin-top: 9rem;
         margin-left:0 ;
@@ -1035,6 +1099,7 @@ background-color: #fff;
     .icons-container .icons{
         padding-top: none;
         padding-bottom: none;
+        flex: 1rem;
     }
     .icons-container{
         display: flex;
@@ -1056,11 +1121,15 @@ background-color: #fff;
         color: rgb(60, 60, 61);
     }
 
+    .contact{
+        padding: 2rem 9%;
+    }
     .contact .row .image iframe {
-        width: 460px;
+        width: 660px;
         box-shadow: 0px 0px 30px 5px rgb(143, 102, 56);
         border-radius: .5rem;
     }
+
 
     .contact .row .info-contacto {
         height: auto;
@@ -1069,18 +1138,19 @@ background-color: #fff;
     .gallery-t .popup-image img{
         width: 95%;
         padding: 25px;
+        height: 650px;
     }
+
 
     .gallery-t .popup-image span {
         position: absolute;
-        top: 65px;
+        top: 95px;
         right: 30px;}
 
     .footer .box-container {
         display:flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        padding: 2rem 9%;
     }
 
     .gallery-t .popup-image {
@@ -1089,11 +1159,20 @@ background-color: #fff;
         top: 100px;
         height: 100%;
         width: 100%;
+        
 
     }
 
+    .tooltip-top{
+        flex-direction: column;
+    }
+
     .footer .box-container .box{
-        text-align: center;
+        text-align: justify;
+    }
+
+    .botones-productos{
+        padding: 1rem;
     }
 
     }
@@ -1103,7 +1182,7 @@ background-color: #fff;
     
 
 
-@media(max-width:430px){
+@media(max-width:375px){
 
     header{
         padding: 1rem;
@@ -1127,7 +1206,23 @@ background-color: #fff;
     }
 
     .products .content h3 {
-        margin-top: 70px;
+        margin-top: 100px;
+    }
+
+    .mobiliario{
+        height: 350px;
+    }
+
+    .mobiliario .content-m h3{
+        margin-top: 100px;
+    }
+
+    .textiles .content-t h3{
+        margin-top: 100px;
+    }
+
+    .textiles{
+        height: 350px;
     }
 
     .aboutt {
@@ -1135,9 +1230,11 @@ background-color: #fff;
     }
 
     .aboutt .content-b h3{
-        margin-top: 70px;
+        margin-top: 100px;
     }
-
+    .footer .box-container .box {
+        text-align: justify;
+    }
     
 
     .contenedor-botones a{
