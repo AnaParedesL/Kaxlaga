@@ -1,27 +1,35 @@
 const languageButton = document.getElementById('languageButton');
 const dropdownMenu = document.querySelector('.dropdown-menu');
 
-
-languageButton.addEventListener('click', () => {
+// Maneja el clic en el botón del menú de idiomas
+languageButton.addEventListener('click', (event) => {
+    // Evita que otros eventos bloqueen la apertura del menú desplegable
+    event.stopPropagation();
+    // Alterna la clase 'open' para mostrar/ocultar el menú desplegable
     languageButton.parentNode.classList.toggle('open');
 });
 
-
+// Cierra el menú desplegable cuando se hace clic fuera de él
 document.addEventListener('click', (event) => {
     if (!languageButton.parentNode.contains(event.target)) {
         languageButton.parentNode.classList.remove('open');
     }
 });
 
-
+// Maneja el cambio de idioma y cierre del menú desplegable
 dropdownMenu.addEventListener('click', (event) => {
+    // Previene la acción por defecto del enlace
     event.preventDefault();
+    // Obtiene el idioma seleccionado
     const selectedLanguage = event.target.getAttribute('data-lang');
     
+    // Cambia el idioma utilizando la función 'changeLanguage'
     changeLanguage(selectedLanguage);
+    // Cierra el menú desplegable
     languageButton.parentNode.classList.remove('open');
 });
 
+// Función para cambiar el idioma según la opción seleccionada
 function changeLanguage(lang) {
     const currentPath = window.location.pathname;
 

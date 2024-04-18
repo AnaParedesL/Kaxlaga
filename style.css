@@ -35,32 +35,34 @@ html{
 }
 
 /*header*/
-header{
+header {
     position: fixed;
-    top: 0; left: 0; right: 0;
+    top: 0;
+    left: 0;
+    right: 0;
     background: #fff;
     padding: 2rem 9%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
     text-transform: capitalize;
 }
 
-header .logo{
+header .logo {
     height: auto;
     width: 170px;
     justify-content: center;
 }
 
-header .navbar{
+header .navbar {
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
 
-header .navbar a{
+header .navbar a {
     font-family: 'Lato';
     font-weight: 400;
     font-style: normal;
@@ -70,23 +72,22 @@ header .navbar a{
     margin-right: 15px;
 }
 
-header .navbar a:hover{
+header .navbar a:hover {
     color: var(--peach);
 }
 
-
-header #toggler{
+header #toggler {
     display: none;
 }
 
-header .fa-bars{
+header .fa-bars {
     font-size: 3rem;
     color: #333;
-    border-radius:.5rem;
-    padding: 5rem 1.5rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
     cursor: pointer;
-    border: 1rem solid rgba(0,0,0,.1);
-    display:none ;
+    border: 1rem solid rgba(0, 0, 0, 0.1);
+    display: none;
 }
 
 
@@ -241,6 +242,10 @@ background: var(--peach);
     padding-bottom: .5rem;
     font-size: 1.8rem;
     text-transform: none;
+}
+
+.icons-container .icons p .ing{
+    color: #fff;
 }
 
 /*contact*/
@@ -486,7 +491,7 @@ background: var(--peach);
 
 .aboutt .content-b h3{
     font-size: 6rem;
-    color: #fff;
+    color: #142624;
     text-align: center;
 }
 
@@ -762,7 +767,7 @@ gap: 1rem;
 .gallery-t .popup-image span{
     position: absolute;
     top: 10px;right: 30px; 
-    font-size: 60px;
+    font-size: 45px;
     font-weight: bolder;
     color: #fff;
     cursor: pointer;
@@ -1083,12 +1088,6 @@ gap: 1rem;
             border-top: 1rem solid rgba(0,0,0,.1);
         
         }
-        
- 
-  
-    .info h3, .info p {
-        text-align: center;
-    }
 }
 
 
@@ -1111,7 +1110,7 @@ gap: 1rem;
     .footer{ margin-top: 50px;}
 .footer .box-container{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 1.5rem;
 }
 
@@ -1172,6 +1171,7 @@ gap: 1rem;
         display: block;
         border-color: #fff ;
         font-size: 4rem;
+        cursor: pointer;
     
     }
 
@@ -1181,19 +1181,70 @@ gap: 1rem;
         background: whitesmoke;
         border-top: .1rem solid rgba(0,0,0,.1);
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0 );
+        transition: clip-path 0.3s ease-in-out;
+        z-index: 1000; 
+        display: none;
     }
 
     header #toggler:checked~.navbar{
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        display: block;
+        padding-bottom: 200px;
     }
 
+
     header .navbar a{
-        margin: 1.5rem;
         padding: 1.5rem;
         background: whitesmoke;
         border: 1rem solid rgba(247, 243, 243, 0.1);
         display: block;
         color: #666;
+    }
+
+    
+
+    header .language-dropdown {
+        position: relative; 
+        padding: 2rem;
+        background: whitesmoke;
+    }
+
+    .dropdown-toggle {
+        background-color: whitesmoke;}
+
+    header .language-dropdown .dropdown-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: whitesmoke;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+        list-style: none;
+        padding: 0;
+        z-index: 1001;
+        display: none; 
+    }
+
+
+    header .language-dropdown.open .dropdown-menu {
+        display: block;
+    }
+
+    header .language-dropdown .dropdown-menu li {
+        padding: 1rem 2rem;
+    }
+
+    header .language-dropdown .dropdown-menu li a {
+        display: block;
+        color: #666;
+        font-family: 'Lato';
+        font-weight: 400;
+        font-size: 2rem;
+        text-decoration: none;
+    }
+
+    header .language-dropdown .dropdown-menu li a:hover {
+        color: var(--peach);
     }
 
     .home{
