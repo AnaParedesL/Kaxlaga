@@ -1337,6 +1337,13 @@ gap: 1rem;
         font-size: 15px;
     }
 
+    .footer{ margin-top: 50px;}
+.footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
     }
 
 
