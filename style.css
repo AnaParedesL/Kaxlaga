@@ -248,6 +248,10 @@ background: var(--peach);
     color: #fff;
 }
 
+.icons-container .icons .ong{
+    color: #fff;
+}
+
 /*contact*/
 
 .heading{
@@ -958,13 +962,13 @@ gap: 1rem;
     padding:1.5rem ;
     margin-top: 1.5rem;
     padding-top:2.5rem;
-    font-size: 16px;
+    font-size: 10px;
     color: #333;
     border-top: 1rem solid rgba(0,0,0,.1);
 
 }
 
-.footer .credit span{
+.footer .credit span a{
     color: var(--peach);
 }
 
@@ -1083,7 +1087,7 @@ gap: 1rem;
             padding:1.5rem ;
             margin-top: 1.5rem;
             padding-top:2.5rem;
-            font-size: 17px;
+            font-size: 10px;
             color: #535353ea;
             border-top: 1rem solid rgba(0,0,0,.1);
         
@@ -1141,7 +1145,7 @@ gap: 1rem;
     padding:1.5rem ;
     margin-top: 1.5rem;
     padding-top:2.5rem;
-    font-size: 16px;
+    font-size: 10px;
     color: #333;
     border-top: 1rem solid rgba(0,0,0,.1);
 
@@ -1334,7 +1338,7 @@ gap: 1rem;
     }
 
     .footer .credit{
-        font-size: 15px;
+        font-size: 10px;
     }
 
     .footer{ margin-top: 50px;}
