@@ -460,17 +460,15 @@ background: var(--peach);
     position: absolute;
     left: 0;
     bottom: 130%;
-    /* Inicialmente oculto, pero sin display: none */
     visibility: hidden;
     opacity: 0;
     transition: opacity 0.3s, visibility 0.3s;
-    display: flex; /* Usa flex para organizar las imágenes */
-    flex-direction: row; /* Organiza las imágenes en una fila horizontal */
+    display: flex; 
+    flex-direction: row;
     gap: 10px;
 }
 
 .tooltip:hover .tooltip-top {
-    /* Cambia la visibilidad y opacidad cuando se interactúa */
     visibility: visible;
     opacity: 1;
 }
@@ -1045,6 +1043,15 @@ gap: 1rem;
 
 
 /*media queries*/
+
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+	
+    .footer .box-container{
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 1.5rem;
+    }
+}
 
 @media (max-width: 1024px){
 
