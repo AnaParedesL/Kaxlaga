@@ -52,7 +52,7 @@ header {
 
 header .logo {
     height: auto;
-    width: 170px;
+    width: 210px;
     justify-content: center;
 }
 
@@ -1498,6 +1498,11 @@ gap: 1rem;
     object-fit: contain;
 }
 
+
+header .logo {
+    height: auto;
+    width: 190px;}
+
 }
 
 @media(max-width:414px){
@@ -1509,7 +1514,7 @@ gap: 1rem;
 
     header .logo {
         height: auto;
-        width: 200px;}
+        width: 190px;}
 
     header .fa-bars {
         font-size: 3rem;
