@@ -125,6 +125,7 @@ section{
     padding: 1rem 0;
     line-height: 1.5;
     text-transform: none;
+    
 }
 
 .home .content p{
@@ -149,6 +150,33 @@ section{
 .home .content .btn:hover{
 background: var(--peach);
 }
+
+.home .content span,
+.home .content p {
+    position: relative;
+    z-index: 1;
+}
+
+.home .content span::after,
+.home .content p::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px; 
+    z-index: -1;
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+}
+
+.home .content span:hover::after,
+.home .content p:hover::after {
+    opacity: 1;
+}
+
 
 /*DESCRIPCION*/
 
@@ -455,7 +483,7 @@ background: var(--peach);
 
 .tooltip-top {
     background: #142624;
-    padding: 40px;
+    padding: 10px;
     border-radius: 5px;
     position: absolute;
     left: 0;
@@ -481,7 +509,7 @@ background: var(--peach);
 
 .tooltip-left {
     background: #142624;
-    padding: 30px;
+    padding: 10px;
     border-radius: 5px;
     position: absolute;
     left: 0;
@@ -1076,7 +1104,7 @@ gap: 1rem;
     padding: 20px;
     margin: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(kaxlaga-img/diseño\ y\ conceptualizacion\ estética.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(kaxlaga-img/disenoy.jpg);
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -1137,7 +1165,7 @@ gap: 1rem;
     padding: 20px;
     margin: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(kaxlaga-img/ASESORÍA\ EN\ DECORACION.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(kaxlaga-img/asesoria.jpg);
     background-size: cover;
     display: flex;
     justify-content: center;
