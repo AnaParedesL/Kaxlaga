@@ -507,33 +507,6 @@ background: var(--peach);
     height: 150px;
 }
 
-.tooltip-left {
-    background: #142624;
-    padding: 10px;
-    border-radius: 5px;
-    position: absolute;
-    left: 0;
-    bottom: 130%;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.3s, visibility 0.3s;
-    display: flex; 
-    flex-direction: row;
-    gap: 10px;
-}
-
-.tooltip:hover .tooltip-left {
-    visibility: visible;
-    opacity: 1;
-}
-
-
-.tooltip .tooltip-left img{
-    width: 150px;
-    height: 150px;
-}
-
-
 
 
 /*SOBRE MI*/
@@ -1544,13 +1517,12 @@ header .logo {
     width: 190px;}
 
 
-    .tooltip-top,
-.tooltip-left {
+    .tooltip-top {
     padding: 10px; 
     flex-direction: column;
 }
 
-.tooltip .tooltip-left .tooltip-top img{
+.tooltip .tooltip-top img{
     width: 120px;
     height: 120px;
 }
@@ -1637,9 +1609,13 @@ header .logo {
     object-fit: contain;
 }
 
-.tooltip-top,
-.tooltip-left {
+.tooltip-top {
     padding: 5px; 
     flex-direction: column;
 }
+.tooltip  .tooltip-top img{
+    width: 120px;
+    height: 120px;
+}
+
 }
