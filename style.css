@@ -427,6 +427,7 @@ background: var(--peach);
 }
 
 .products .content h3{
+    margin-top: 90px;
     font-size: 6rem;
     color: #fff;
     text-align: center;
@@ -522,6 +523,7 @@ background: var(--peach);
 }
 
 .aboutt .content-b h3{
+    margin-top: 90px;
     font-size: 6rem;
     color: #fff;
     text-align: center;
@@ -706,6 +708,7 @@ gap: 1rem;
 }
 
 .textiles .content-t h3{
+    margin-top: 90px;
     font-size: 6rem;
     color: #fff;
     text-align: center;
@@ -915,6 +918,7 @@ gap: 1rem;
 }
 
 .mobiliario .content-m h3{
+    margin-top: 90px;
     font-size: 6rem;
     color: #fff;
     text-align: center;
@@ -1530,6 +1534,19 @@ header .logo {
 .contenedor-botones a{
     font-size: 2rem;
 }
+
+.aboutt .content-b h3 {
+    margin-top: 70px;}
+
+.products .content h3 {
+    margin-top: 70px;}
+
+    .mobiliario .content-m h3 {
+    margin-top: 70px;}
+
+    .textiles .content-t h3 {
+    margin-top: 70px;}
+
 }
 
 
